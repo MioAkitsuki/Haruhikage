@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Haruhikage - 春日影</title>
+        <meta name="description" content="">
+        <link rel="icon" type="image/x-icon" href="icon.png" />
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <!-- ex nihilo || May - June 2022 -->
+        <!-- style start -->
+        <link href="css/plugins.css" media="all" rel="stylesheet" type="text/css">
+        <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+        <!-- style end -->
+        <!-- google fonts start -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7CPlayfair+Display:500,600,700,800,900" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
+        <!-- google fonts end -->
+    </head>
+    <body>
+        <!-- preloader start -->
+        <div class="preloader-bg"></div>
+        <div id="preloader">
+            <div id="preloader-status">
+                <div class="preloader-position loader">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <!-- preloader end -->
+        <!-- borders start -->
+        <div class="border-top"></div>
+        <!-- borders end -->
+        <!-- home start -->
+        <div class="upper-page" id="home">
+            <!-- hero bg start -->
+            <div class="hero-fullscreen">
+                <div class="hero-fullscreen-FIX">
+                    <div class="hero-bg">
+                        <!-- hero slider wrapper start -->
+                        <div class="swiper-container-wrapper">
+                            <!-- swiper container start -->
+                            <div class="swiper-container swiper1">
+                                <!-- swiper wrapper start -->
+                                <div class="swiper-wrapper">
+                                    <!-- swiper slider item start -->
+                                    <div class="swiper-slide">
+                                        <div class="swiper-slide-inner" data-swiper-parallax="50%">
+                                            <!-- swiper slider item IMG start -->
+                                            <div class="swiper-slide-inner-bg bg-img overlay overlay-dark">
+                                            </div>
+                                            <!-- swiper slider item IMG end -->
+                                            <!-- swiper slider item txt start -->
+                                            <div class="swiper-slide-inner-txt">
+                                                <!-- section subtitle start -->
+                                                <div class="section-title section-title-home fadeIn-element">
+                                                    <h2 class="section-title-line section-title-line-home">
+                                                        <span>MyGO!!!!!</span>
+                                                    </h2>
+                                                </div>
+                                                <!-- section subtitle end -->
+                                                <!-- divider start -->
+                                                <div class="divider-m"></div>
+                                                <!-- divider end -->
+                                                <!-- section title start -->
+                                                <div class="">
+                                                    <h1 class="title fadeIn-element">HARUHIKAGE</h1>
+                                                </div>
+                                                
+                                                <h3 class="fadeIn-element subtitle">「なんで春日影やったの！？」</h3>
+                                                <!-- section title end -->
+                                                <!-- divider start -->
+                                                <div class="divider-m"></div>
+                                                <!-- divider end -->
+                                                <!-- button start -->
+                                                <div class="more-wraper-center more-wraper-center-home" id="player">
+                                                    <audio controls height="100" width="100" hidden preload id="vd">
+                                                        <source src="downloads/MyGO!!!!! - Haruhikage.flac" type="audio/mpeg">
+                                                    </audio>
+                                                    <a>
+                                                        <div class="more-button-bg-center more-button-circle"></div>
+
+                                                        <div class="more-button-txt-center">
+                                                            <span id="label">Play</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- button end -->
+                                            </div>
+                                            <!-- swiper slider item txt end -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- swiper wrapper end -->   
+                            </div>
+                            <!-- swiper container end -->
+                        </div>
+                        <!-- hero slider wrapper end -->
+                    </div>
+                </div>
+            </div>
+            <!-- hero bg end -->
+        </div>
+        <!-- photoSwipe background end -->
+        <!-- scripts start -->
+        <script src="js/plugins.js"></script> 
+        <script src="js/dinex.js"></script>
+        <!-- scripts end -->
+    </body>
+</html>
+
+<script type="text/javascript">
+    var btn = document.getElementById("player");
+    btn.onclick=function(){
+        toggleSound();
+    }
+
+    function toggleSound() {
+        var music = document.getElementById("vd");
+
+        if (music.paused) {
+            music.paused = false;
+            music.play();
+        }
+    }
+</script>
+
+<style>
+    .title {
+        font-size: 48px;
+        text-align: center;
+        color: white;
+        font-family: 'Noto Serif JP', 'Playfair Display', serif;
+        font-weight: 600;
+
+        margin-bottom: 24px;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: white;
+        font-family: 'Noto Serif JP', 'Playfair Display', serif;
+    }
+</style>
